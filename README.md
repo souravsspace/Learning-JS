@@ -1,2 +1,2 @@
 # Learning-JS
-- all learning js code will be in here
+# All JS code will be in here - from 4th march 2023
