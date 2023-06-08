@@ -1,0 +1,19 @@
+.box {
+  width: 150px;
+  height: 150px;
+  border-radius: 100vmax;
+  box-shadow: 
+    10px 5px 1rem inset rgba(255 255 255 / 0.25),
+    -10px -25px 1rem inset rgba(255 255 255 / 0.25)
+  ;
+
+  background: cadetblue;
+
+  margin-top: 1em;
+}
+
+.rotate {
+  background: green;
+}
+
+
