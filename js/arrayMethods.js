@@ -32,6 +32,91 @@ const characters = [
 const numbers = [2,5,67,3,78,2,5,76,87,4,3,34,5,73,63];
 
 
+// ##### Practicing by myself ##########
+
+
+
+
+
+// // Does every character have mass more than 40? 
+// const mass = characters.every((character)=>{
+//       return character.mass < 40
+// })
+// console.log(mass)
+
+// Sort by mass
+// const byMass = characters.sort((a,b)=>{
+//       return a.mass - b.mass
+// })
+
+// console.log(byMass)
+
+
+// Sort by name
+// const byNames = characters.sort((a,b)=>{
+//       if(a.name < b.name){return -1}
+//       return 1
+// })
+
+// console.log(byNames)
+
+
+
+// // Get characters with height less than 200
+// const toHeight = characters.filter((character) =>{
+//       return character.height < 200
+// })
+// console.log(toHeight)
+
+
+
+// Get the total number of characters by eye color (hint. a map of eye color to count)
+// const totalEyeClr = characters.reduce((previous, current)=>{
+//       if(previous[current.eye_color]){
+//           // previous[current.eye_color] + 1; or
+//           previous[current.eye_color]++;
+//       } else {
+//           previous[current.eye_color] = 1;
+//       }
+//       return previous;
+// }, {}) 
+
+// console.log(totalEyeClr)
+
+
+
+// Get the total height of all characters
+// const totalHeight = characters.reduce((previous, current)=>{
+//       return [previous + current.height]
+// }, 0)
+// console.log(totalHeight)
+
+
+// Get the total number of characters in all the character names using reduce
+// const totalMass = characters.reduce((previous, current)=>{
+//       return [previous + current.mass] 
+// }, 0)
+
+// console.log(totalMass)
+
+
+
+
+// Get an array of all names using map
+// const allNames = characters.map(character => character.name)
+// console.log(allNames)
+
+// Get an array of all first names using map
+// const firstName = characters.map((character)=>{
+//       return character.name.split(' ')[0]
+// })
+// console.log(firstName)
+
+
+
+
+
+
 // ########## REDUCE ##########
 
 //     Get the total mass of all characters
@@ -41,17 +126,17 @@ const numbers = [2,5,67,3,78,2,5,76,87,4,3,34,5,73,63];
 
 
 
-const eyeClr = characters.reduce((acc, curr) =>{
-      const clr = curr.eye_color;
-      if(acc[clr]){
-        acc[clr]++;
-      } else {
-        acc[clr] = 1
-      }
-      return acc
-}, {})
+// const eyeClr = characters.reduce((acc, curr) =>{
+//       const clr = curr.eye_color;
+//       if(acc[clr]){
+//         acc[clr]++;
+//       } else {
+//         acc[clr] = 1
+//       }
+//       return acc
+// }, {})
 
-console.log(eyeClr)
+// console.log(eyeClr) 
 
 
 
@@ -190,7 +275,7 @@ console.log(eyeClr)
 
 
 
-// Array.filter()
+// ######## filter() ###########
 
 // const filter = characters.filter(character => character.mass < 100)
 // console.log(filter)
