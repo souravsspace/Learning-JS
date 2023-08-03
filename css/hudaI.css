@@ -1,0 +1,15 @@
+
+.main > div {
+  height: 10em;
+  aspect-ratio: 1;
+  background: white;
+}
+
+.main > div > p {
+  color: black;
+}
+
+.pera {
+  font-family: monospace;
+  background-color: red;
+}
