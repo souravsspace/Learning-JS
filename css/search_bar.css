@@ -1,0 +1,30 @@
+
+body {
+  background: rgb(222, 232, 233);
+  display: grid;
+  gap: 0.5rem;
+}
+
+input {
+  font-size: 1em;
+}
+
+.search-wrapper, .user-cards {
+  border: 1px solid;
+  padding: 5px 10px;
+}
+
+.user-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
+}
+
+.card {
+  border: 0.5px solid rgba(0 0 0 / 0.5);
+  padding: 3px 5px;
+}
+
+.hide {
+  display: none;
+}
+
