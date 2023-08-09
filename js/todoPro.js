@@ -3,9 +3,7 @@ const inputBox = document.querySelector("[input-box")
 const btn = document.querySelector("[btn]")
 
 
-btn.addEventListener("click", todo)
-
-function todo(){
+btn.addEventListener("click", ()=>{
       if(inputBox.value == ''){
             alert("write some first..")
       } else {
@@ -18,7 +16,7 @@ function todo(){
             li.appendChild(span)
       }
       inputBox.value = "";
-}
+})
 
 listContainer.addEventListener("click", (e)=>{
       if(e.target.tagName === "LI"){

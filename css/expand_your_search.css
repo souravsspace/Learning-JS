@@ -1,0 +1,73 @@
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+}
+
+.search-btn, .close-btn {
+  width: 40px;
+  aspect-ratio: 1;
+  font-size: 24px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  position: absolute;
+}
+
+
+.close-btn {
+  color: tomato;
+  width: 0px;
+  font-size: 0px;
+}
+
+.inputBox {
+  outline: none;
+  
+  background: transparent;
+  width: 0px;
+
+  height: 35px;
+  padding: 5px 10px;
+  font-size: 18px;
+
+  border-radius: 10px;
+  border: none;
+}
+
+
+/* ! while active then ? */
+
+
+.active .inputBox {
+  width: 300px;
+  background: rgb(44, 44, 53);
+}
+
+.active .search-btn {
+  transform: translateX(275px);
+  scale: 0.95;
+}
+
+.active .close-btn {
+  transform: translateX(300px);
+
+  width: 40px;
+  font-size: 24px;
+}
+
+
+
