@@ -28,7 +28,10 @@ const main = ()=>{
             }
       })
 
-      closeBtn.addEventListener('click', ()=> search.classList.remove('active'))
+      closeBtn.addEventListener('click', ()=> {
+        search.classList.remove('active') 
+        inputBox.value = ''
+      })
       
 
       // ? search bar logic
