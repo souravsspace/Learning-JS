@@ -12,11 +12,24 @@
 <body>
 
     <div class="qrapper">
-          <div searchBox class="search-box">
-              <input inputBox type="text" placeholder="search" class="inputBox">
-              <button searchBtn class="search-btn"><i class="ph ph-magnifying-glass"></i></button>
-              <button closeBtn class="close-btn"><i class="ph ph-x"></i></button>
+
+          <div search class="search">
+                <input inputBox type="text" placeholder="search" class="inputBox">
+                <button searchBtn class="search-btn"><i class="ph ph-magnifying-glass"></i></button>
+                <button closeBtn class="close-btn"><i class="ph ph-x"></i></button>
           </div>
+          
+          <h1 class="heading-cardlist">User List</h1>
+          <div cardList class="cardList">
+                <template cardTemplate>
+                    <div class="card">
+                      <h2 userName></h2>
+                      <p userEmail></p>
+                      <p userUsername></p>
+                    </div>
+                </template>
+          </div>
+
     </div>
 
 
