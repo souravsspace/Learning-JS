@@ -8,7 +8,7 @@ searchInput.addEventListener("input", e => {
             const isVisible = user.name.toLowerCase().includes(value.toLowerCase()) || user.email.toLowerCase().includes(value.toLowerCase())
             user.element.classList.toggle("hide", !isVisible)
       })
-}
+})
 
 
 fetch("https://jsonplaceholder.typicode.com/users")
